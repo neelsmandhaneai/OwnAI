@@ -1,0 +1,2 @@
+# OwnAI
+Trying out AI 
