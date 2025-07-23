@@ -48,8 +48,8 @@ if uploaded_file is not None:
         st.success("✅ File uploaded and content extracted.")
 
 # Set up model
-llm = ChatOllama(model="deepseek-r1:latest")
-
+# llm = ChatOllama(model="deepseek-r1:latest")
+llm = ChatOllama(model="deepseek-r1:latest", base_url="http://localhost:11434")
 # Display chat history
 for msg in st.session_state.messages:
     st.chat_message(msg["role"]).markdown(msg["content"])
